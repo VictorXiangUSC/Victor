@@ -166,6 +166,15 @@ a {
     fill: var(--color-primary);
 }
 
+.icon--white {
+    fill: white;
+}
+
+.icon--small {
+    width: 30px;
+    height: 30px;
+}
+
 .icon-container {
     background-color: #f3f9fa;
     width: 64px;
@@ -175,6 +184,81 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+.icon-container--accent {
+    background: var(--color-accent);
+}
+
+/* Buttons */
+
+.btn {
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    outline: 0;
+    padding: 2rem 4vw;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  
+  .btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
+  
+  .btn--primary {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  
+  .btn--primary:hover {
+    background: #3a8ffd;
+  }
+  
+  .btn--secondary {
+    background: var(--color-secondary);
+    color: #fff;
+  }
+  
+  .btn--secondary:hover {
+    background: #05cdf0;
+  }
+  
+  .btn--accent {
+    background: var(--color-accent);
+    color: #fff;
+  }
+  
+  .btn--accent:hover {
+    background: #ec3000;
+  }
+  
+  .btn--outline {
+    background: #fff;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+  }
+  
+  .btn--outline:hover {
+    background: var(--color-headings);
+    color: #fff;
+  }
+  
+  .btn--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  
+  .btn--block {
+    width: 100%;
+    display: inline-block;
+  }
 
 /* inputs */
 
@@ -386,4 +470,35 @@ a {
         grid-template-columns: repeat(3, 1fr);
     }
     
+}
+
+/* Testamonials */
+
+.testamonial {
+    padding: 3rem;
+}
+
+.testimonial__image {
+    position: relative;
+}
+
+.testimonial__image>img {
+    width: 100%;
+}
+
+.testimonial__image>.icon-container {
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial .quote,
+    .testamonial .quote__author {
+        font-size: 2.4rem;
+    }
+
+    .testimonial .quote {
+        margin-left: 6rem;
+    }
 }
